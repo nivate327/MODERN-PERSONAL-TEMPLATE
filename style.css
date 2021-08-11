@@ -161,3 +161,75 @@ row img{
 {
   color:var(--main-color);
 }
+
+.icon-bar
+{
+  position: fixed;
+  top:50%;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.icon-bar a
+{
+  width:220px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color:white;
+  transform: translateX(-176px);
+  transition: all 0.4s linear;
+}
+
+.icon-bar a:hover
+{
+  color:white;
+  transform: translateX(0);
+  text-decoration: none;
+}
+
+.socialIcon{
+  padding: .5rem;
+  outline: none;
+  animation: zigzag 2s linear alternate-reverse infinite;
+  transition: all 0.4s linear;
+}
+
+@keyframes zigzag
+{
+  from{
+    transform: scale(0.9);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+
+
+.facebook
+{
+  background: #1877F2;
+}
+
+.instagram
+{
+  background: #E4405F;
+}
+
+.twitter
+{
+  background: #1DA1F2;
+}
+
+.linkedin
+{
+  background: #0A66C2;
+}
+
+.youtube
+{
+  background: #CD201F;
+}
